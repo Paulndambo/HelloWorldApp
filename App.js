@@ -1,20 +1,31 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { Text, View } from 'react-native';
+import Game2 from './components/Game2';
+import Cat from './refresher/Hello';
+import Hello2 from './refresher/Hello2';
+import Hello1 from './refresher/Hello1';
+import Hello11 from './refresher/Hello11';
+import GetName from './components/TextInput';
+//import Cafe from './refresher/MultipleComponents';
+import Hotel from './refresher/MultipleProps';
+import Student from './refresher/props/Student';
+import Mwanafunzi from './refresher/Mwanafunzi';
+import Cafe from './refresher/ComponentState';
+import DisplayName from './refresher/Hooks/DisplayName';
+import TextInputComponent from './refresher/TextInputComponent';
+import ScrollableComponent from './refresher/ScrollableComponent';
+import FlatListComponent from './refresher/FlatListComponent';
+import SectionListComponent from './refresher/SectionListComponent';
 
-export default function App() {
+
+const App = () => {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+    <View style={{ flex: 1, justifyContent: "center", alignItems: "center", }}>
+    
+      <SectionListComponent />
     </View>
+   
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;
